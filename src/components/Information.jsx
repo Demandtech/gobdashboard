@@ -136,7 +136,7 @@ const Wrapper = styled.section`
     gap: 1rem;
     .information {
       .title {
-        color: #2d2d2d;
+        color: #6c6c6c;
       }
       .logo-design {
         display: flex;

@@ -51,6 +51,7 @@ const Wrapper = styled.div`
         padding-left: 10px;
         color: #fff;
         font-size: 1rem;
+        transition: all ease-in-out .3s;
 
         &:focus {
           outline: 2px solid #11aeef;
