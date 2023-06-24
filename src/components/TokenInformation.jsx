@@ -7,7 +7,7 @@ const TokenInformation = ({ info }) => {
       <h3>{info.name}</h3>
       <div className='price'>
         <span>{info.price}</span>
-        <span> (${info.usd}) </span>
+        <span className='usd'> (${info.usd}) </span>
       </div>
     </Wrapper>
   )
@@ -31,6 +31,10 @@ const Wrapper = styled.section`
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 0.8;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .usd {
+    color: #11aeef;
   }
   color: white;
 `

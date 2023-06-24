@@ -14,7 +14,7 @@ const WalletInformation = ({ info }) => {
       <h3>{info.name}</h3>
       <div className='price'>
         <span>ETH: {info.ethPrice} </span>
-        <span>USD: {info.dollarPrice} </span>
+        <span className='usd'>USD: {info.dollarPrice} </span>
       </div>
     </Wrapper>
   )
@@ -53,6 +53,11 @@ const Wrapper = styled.section`
     font-size: 0.8rem;
     font-weight: 500;
     line-height: 0.8;
+    font-family: 'Orbitron', sans-serif;
+
+    .usd {
+      color: #11aeef;
+    }
   }
   color: white;
 `
