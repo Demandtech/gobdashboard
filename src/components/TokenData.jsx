@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { HiOutlineExternalLink } from 'react-icons/hi'
+import { HiOutlineExternalLink, HiBookmark } from 'react-icons/hi'
 const TokenData = () => {
   return (
     <Wrapper>
@@ -18,9 +18,9 @@ const TokenData = () => {
             <span>Look Up</span>
             <HiOutlineExternalLink />
           </button>
-          <button type='button'>
+          <button type='button' className='btn-secondary'>
             <span>Add to Favorite</span>
-            <HiOutlineExternalLink />
+            <HiBookmark />
           </button>
         </div>
       </form>
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
         padding-left: 10px;
         color: #fff;
         font-size: 1rem;
-        transition: all ease-in-out .3s;
+        transition: all ease-in-out 0.3s;
 
         &:focus {
           outline: 2px solid #11aeef;
@@ -83,7 +83,11 @@ const Wrapper = styled.div`
 
       .btn-primary {
         background: #11aeef;
-        color: white;
+        color: #ffffff;
+      }
+      .btn-secondary {
+        background: #ffffff;
+        color: #11aeef;
       }
     }
   }
