@@ -53,7 +53,7 @@ const Wrapper = styled.div`
         font-size: 1rem;
 
         &:focus {
-          outline: red;
+          outline: 2px solid #11aeef;
         }
       }
       label {
@@ -102,7 +102,7 @@ const Wrapper = styled.div`
         width: 100%;
         align-items: stretch;
 
-        button{
+        button {
           padding: 15px 0;
           font-size: 1rem;
         }
