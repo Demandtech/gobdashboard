@@ -12,7 +12,7 @@ const Supply = ({ info }) => {
         <h3>{info.name}</h3>
         <div className='price'>
           <span className='only-up'>{info.price} $ONLYUP </span>
-          <span> ${info.usd}</span>
+          <span className='usd'> ${info.usd}</span>
         </div>
       </div>
     </Wrapper>
@@ -43,6 +43,10 @@ const Wrapper = styled.article`
     .only-up {
       font-family: 'Orbitron', sans-serif;
       font-size: 0.8rem;
+    }
+    .usd {
+      color: #11aeef;
+      font-family: 'Orbitron', sans-serif;
     }
   }
   img {

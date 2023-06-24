@@ -76,7 +76,7 @@ const Wrapper = styled.div`
         border: none;
         font-weight: 400;
         border-radius: 8px;
-        font-size: .8rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
       }
 
@@ -101,6 +101,11 @@ const Wrapper = styled.div`
         flex-direction: column;
         width: 100%;
         align-items: stretch;
+
+        button{
+          padding: 15px 0;
+          font-size: 1rem;
+        }
       }
       flex-direction: column;
       width: 100%;

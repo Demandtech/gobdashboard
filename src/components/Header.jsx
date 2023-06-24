@@ -60,6 +60,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 600px) {
+    flex-direction: column;
     .current-price {
       font-size: 1rem;
     }

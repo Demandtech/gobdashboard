@@ -98,6 +98,9 @@ const Information = () => {
             })}
           </div>
           <div className='logo-design'>
+            <div className='logo-wrapper'>
+              <img src={logo} alt='logo' />
+            </div>
             <h2 className='logo-name'>MOON MAN</h2>
             <div className='logo-wrapper'>
               <img src={logo} alt='logo' />
@@ -119,8 +122,8 @@ const Wrapper = styled.section`
   border-radius: 5px;
   margin-top: 50px;
   color: #ffffff;
-  padding: 1.5rem 2px 0 2px;
-  background: url(${bgsvg});
+  padding: 1.5rem 2px 1.5rem 2px;
+  /* background: url(${bgsvg}); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -129,6 +132,7 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-bottom: 1rem;
+
     gap: 1rem;
     .information {
       .title {
@@ -139,6 +143,7 @@ const Wrapper = styled.section`
         justify-content: center;
         align-items: center;
         transform: translateY(10px);
+        gap: 1rem;
 
         .logo-wrapper {
           width: 32px;

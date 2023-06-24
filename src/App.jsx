@@ -14,8 +14,12 @@ function App() {
 
 const Wrapper = styled.div`
   max-width: 1440px;
-  padding: 0 50px;
+  padding: 0px 50px;
   margin: 0 auto;
+
+  @media (max-width: 600px){
+    padding: 0px 15px;
+  }
 `
 
 export default App
