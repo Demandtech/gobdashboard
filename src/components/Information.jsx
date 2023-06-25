@@ -189,12 +189,14 @@ const Wrapper = styled.section`
         border: 0.5px solid #9f9f9f;
         padding: 0.8rem;
         border-radius: 5px;
+        background: #1c1c1c;
       }
       .coming-soon {
         flex: 1;
         color: #9f9f9f;
         background: url(${bgsvg}) no-repeat;
         background-color: #1c1c1c;
+
         background-size: cover;
         font-family: phage, sans-serif;
         min-height: 150px;
@@ -233,6 +235,7 @@ const Wrapper = styled.section`
   .supply-info {
     /* border: 0.4px solid #2d2d2d; */
     border: 0.5px solid #9f9f9f;
+    background: #1c1c1c;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;

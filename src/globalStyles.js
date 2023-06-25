@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
   /* background:#2b2b2b; */
   background: url(${img});
   background-attachment: fixed;
+  backdrop-filter: contrast(95%);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
