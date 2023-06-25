@@ -86,7 +86,7 @@ const Information = () => {
     <Wrapper>
       <div className='info-container'>
         <div className='information'>
-          <h3 className='title'>Wallet Information</h3>
+          <h3 className='title'>Token Information</h3>
           <div className='wallet-info-wrapper'>
             {tokenInfo.map((info, index) => {
               return <TokenInformation info={info} key={index} />
@@ -123,10 +123,10 @@ const Information = () => {
 }
 
 const Wrapper = styled.section`
-  /* border: 0.4px solid #2d2d2d; */
   border-radius: 5px;
   margin-top: 20px;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #ececec;
   padding: 1.5rem 2px 1.5rem 2px;
   /* background: url(${bgsvg}); */
   background-repeat: no-repeat;
@@ -149,6 +149,7 @@ const Wrapper = styled.section`
         align-items: center;
         transform: translateY(35px);
         gap: 1rem;
+        color: #ececec;
 
         .logo-wrapper {
           width: 32px;
@@ -179,7 +180,7 @@ const Wrapper = styled.section`
         display: flex;
         justify-content: space-between;
         gap: 1rem;
-        border: 0.4px solid #2d2d2d;
+        border: 0.5px solid #9f9f9f;
         padding: 0.8rem;
         border-radius: 5px;
       }
@@ -193,6 +194,7 @@ const Wrapper = styled.section`
         max-width: 400px;
         padding-left: 1rem;
         margin-top: 1rem;
+        opacity: 0.6;
 
         h3 {
           font-family: phage;
@@ -215,7 +217,8 @@ const Wrapper = styled.section`
     }
   }
   .supply-info {
-    border: 0.4px solid #2d2d2d;
+    /* border: 0.4px solid #2d2d2d; */
+    border: 0.5px solid #9f9f9f;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -227,24 +230,16 @@ const Wrapper = styled.section`
     .info-container {
       grid-template-columns: 1fr;
       .information {
+        .logo-design {
+          transform: translateY(10px);
+        }
+
         .title {
           padding-top: 0.5rem;
         }
+
         .wallet-info-wrapper {
           flex-direction: column;
-        }
-      }
-    }
-    .supply-info {
-      flex-direction: column;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .info-container {
-      .information {
-        .logo-design {
-          transform: translateY(10px);
         }
       }
       .right-side {
@@ -254,6 +249,9 @@ const Wrapper = styled.section`
           min-width: 100%;
         }
       }
+    }
+    .supply-info {
+      flex-direction: column;
     }
   }
 `

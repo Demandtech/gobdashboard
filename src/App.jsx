@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   max-width: 1440px;
   padding: 0px 50px;
   margin: 0 auto;
-  -webkit-font-smoothing: antialiased;
+  
 
   .header {
     display: flex;

@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     display: flex;
     padding: 20px 0;
     a {
-      background: #11aeef;
+      background: #31e2f1;
       color: white;
       display: flex;
       align-items: center;
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
     }
   }
   .current-price {
-    color: #11aeef;
+    color: #31e2f1;
     font-size: 2rem;
     text-transform: uppercase;
     font-family: phage;

@@ -22,7 +22,7 @@ const WalletInformation = ({ info }) => {
 
 const Wrapper = styled.section`
   padding: 20px;
-  border: 0.4px solid #2d2d2d;
+  border: 0.5px solid #9f9f9f;
   border-radius: 5px;
   flex: 1;
   h3 {

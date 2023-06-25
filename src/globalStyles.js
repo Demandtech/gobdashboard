@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
  }
  html{
    scroll-behavior: smooth;
+   -webkit-font-smoothing: antialiased;
  }
  *, *::after, *::before{
    padding: 0;
@@ -17,7 +18,8 @@ const GlobalStyle = createGlobalStyle`
    box-sizing: border-box;
  }
   body {
-  background: #1c1c1c;
+  /* background: #1c1c1c; */
+  background:#2b2b2b;
   padding: 0;
   margin: 0;
   box-sizing: border-box;

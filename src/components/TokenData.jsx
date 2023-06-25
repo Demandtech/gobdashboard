@@ -29,9 +29,18 @@ const TokenData = () => {
 }
 
 const Wrapper = styled.div`
-  border: 0.4px solid #2d2d2d;
+  border: 0.5px solid #9c9c9c;
+
   padding: 0.8rem;
   border-radius: 5px;
+
+  label {
+    display: block;
+    font-family: phage;
+    font-weight: 500;
+    color: #ececec;
+  }
+
   form {
     display: flex;
     align-items: flex-end;
@@ -46,19 +55,17 @@ const Wrapper = styled.div`
         box-sizing: border-box;
         height: 45px;
         background: transparent;
-        border: 0.4px solid #2d2d2d;
+        border: 0.5px solid #9c9c9c;
         border-radius: 4px;
         padding-left: 10px;
-        color: #fff;
+        color: #ececec;
         font-size: 1rem;
         transition: all ease-in-out 0.3s;
+        font-family: phage;
 
         &:focus {
-          outline: 2px solid #11aeef;
+          outline: 2px solid #31e2f1;
         }
-      }
-      label {
-        display: block;
       }
     }
     .btns {
@@ -79,15 +86,16 @@ const Wrapper = styled.div`
         border-radius: 8px;
         font-size: 0.8rem;
         text-transform: uppercase;
+        font-family: phage;
       }
 
       .btn-primary {
-        background: #11aeef;
-        color: #ffffff;
+        background: #31e2f1;
+        color: #ececec;
       }
       .btn-secondary {
-        background: #ffffff;
-        color: #11aeef;
+        background: #ececec;
+        color: #31e2f1;
       }
     }
   }
