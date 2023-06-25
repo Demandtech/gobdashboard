@@ -147,9 +147,11 @@ const Wrapper = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translateY(35px);
+        transform: translateY(20px);
         gap: 1rem;
         color: #ececec;
+        background: #1c1c1c;
+        padding: 20px 0;
 
         .logo-wrapper {
           width: 32px;
@@ -190,17 +192,15 @@ const Wrapper = styled.section`
       }
       .coming-soon {
         flex: 1;
-        color: white;
+        color: #9f9f9f;
         background: url(${bgsvg}) no-repeat;
-        background-color: #2b2b2b;
+        background-color: #1c1c1c;
         background-size: cover;
-        font-family: phage;
+        font-family: phage, sans-serif;
         min-height: 150px;
         max-width: 400px;
         padding-left: 1rem;
         margin-top: 1rem;
-        opacity: 0.6;
-       
 
         h3 {
           font-family: phage;
