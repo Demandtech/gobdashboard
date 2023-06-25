@@ -153,7 +153,11 @@ const Wrapper = styled.section`
 
         .logo-wrapper {
           width: 32px;
-
+          animation-name: rotate;
+          animation-iteration-count: infinite;
+          animation-duration: 10s;
+          animation-direction: normal;
+          animation-timing-function: ease;
           img {
             width: 100%;
             object-fit: cover;
@@ -214,6 +218,14 @@ const Wrapper = styled.section`
 
     .right-side {
       padding-top: 1.8rem;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
     }
   }
   .supply-info {

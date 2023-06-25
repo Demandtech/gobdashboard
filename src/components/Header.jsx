@@ -55,10 +55,25 @@ const Wrapper = styled.div`
   }
   .logo-wrapper {
     width: 32px;
+    height: 32px;
     margin-left: 1rem;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: normal;
+    animation-timing-function: ease;
     img {
       width: 100%;
       object-fit: cover;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
     }
   }
 
