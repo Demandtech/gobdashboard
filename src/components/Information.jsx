@@ -192,6 +192,7 @@ const Wrapper = styled.section`
         flex: 1;
         color: white;
         background: url(${bgsvg}) no-repeat;
+        background-color: #2b2b2b;
         background-size: cover;
         font-family: phage;
         min-height: 150px;
@@ -199,6 +200,7 @@ const Wrapper = styled.section`
         padding-left: 1rem;
         margin-top: 1rem;
         opacity: 0.6;
+       
 
         h3 {
           font-family: phage;

@@ -30,7 +30,7 @@ const TokenData = () => {
 
 const Wrapper = styled.div`
   border: 0.5px solid #9c9c9c;
-
+  background: #1c1c1c;
   padding: 0.8rem;
   border-radius: 5px;
 

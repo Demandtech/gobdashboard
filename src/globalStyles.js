@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-// import img from './assets/body-bg.png'
+import img from './assets/body-bg.png'
 //import phageRough from './assets/fonts/phageRough.otf'
 import phageRegular from './assets/fonts/phageRegular.otf'
 
@@ -19,13 +19,16 @@ const GlobalStyle = createGlobalStyle`
  }
   body {
   /* background: #1c1c1c; */
-  background:#2b2b2b;
+  /* background:#2b2b2b; */
+  background: url(${img});
+  background-attachment: fixed;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-attachment: fixed;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
+  
  }
   
 `
