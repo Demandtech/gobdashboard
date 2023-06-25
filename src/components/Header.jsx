@@ -8,7 +8,7 @@ const Header = () => {
       <div className='left'>
         <div>
           <a href='#' className='btn'>
-            <span>Buy $MOON MAN</span>
+            <span>Buy $MOONMAN</span>
             <HiOutlineExternalLink />
           </a>
         </div>
@@ -30,15 +30,18 @@ const Wrapper = styled.div`
   justify-content: space-between;
   .left {
     display: flex;
+    align-items: center;
     padding: 20px 0;
     a {
       background: #31e2f1;
-      color: white;
+      font-family: phage, sans-serif;
+      color: #ececec;
       display: flex;
       align-items: center;
       gap: 0.4rem;
       text-decoration: none;
-      padding: 5px 20px;
+      height: 40px;
+      padding: 0 20px;
       text-transform: uppercase;
       font-weight: 400;
       border-radius: 8px;
@@ -59,7 +62,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     .current-price {
       font-size: 1rem;
