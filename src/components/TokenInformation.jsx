@@ -17,6 +17,7 @@ const Wrapper = styled.section`
   border: 0.4px solid #2d2d2d;
   border-radius: 5px;
   padding: 20px;
+  flex: 1;
 
   h3 {
     text-transform: uppercase;

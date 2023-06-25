@@ -1,39 +1,41 @@
 import TokenInformation from './TokenInformation'
-import WalletInformation from './WalletInformation'
+//import WalletInformation from './WalletInformation'
 import Supply from './Supply'
 import TokenData from './TokenData'
 import styled from 'styled-components'
-import wallet from '../assets/wallet-icon.png'
-import marketing from '../assets/marketing.png'
-import buyback from '../assets/buyback.png'
-import lp from '../assets/lp.png'
+// import wallet from '../assets/wallet-icon.png'
+// import marketing from '../assets/marketing.png'
+// import buyback from '../assets/buyback.png'
+// import lp from '../assets/lp.png'
 import bgsvg from '../assets/svg.svg'
 import { GiBurningMeteor } from 'react-icons/gi'
 import { BiReflectVertical } from 'react-icons/bi'
 import { FaPiggyBank } from 'react-icons/fa'
 import logo from '../assets/logo.png'
+//import bgsvg from './assets/svg.svg'
+//import moonMan from './assets/moon-man.svg'
 
 const Information = () => {
-  const walletInfo = [
-    {
-      name: 'BUYBACK WALLET',
-      icon: { wallet: wallet, subImg: buyback },
-      ethPrice: 0.45,
-      dollarPrice: 454,
-    },
-    {
-      name: 'LP WALLET',
-      icon: { wallet: wallet, subImg: lp },
-      ethPrice: 0.45,
-      dollarPrice: 654,
-    },
-    {
-      name: 'MARKETING WALLET',
-      icon: { wallet: wallet, subImg: marketing },
-      ethPrice: 0.45,
-      dollarPrice: 1854,
-    },
-  ]
+  // const walletInfo = [
+  //   {
+  //     name: 'BUYBACK WALLET',
+  //     icon: { wallet: wallet, subImg: buyback },
+  //     ethPrice: 0.45,
+  //     dollarPrice: 454,
+  //   },
+  //   {
+  //     name: 'LP WALLET',
+  //     icon: { wallet: wallet, subImg: lp },
+  //     ethPrice: 0.45,
+  //     dollarPrice: 654,
+  //   },
+  //   {
+  //     name: 'MARKETING WALLET',
+  //     icon: { wallet: wallet, subImg: marketing },
+  //     ethPrice: 0.45,
+  //     dollarPrice: 1854,
+  //   },
+  // ]
 
   const tokenInfo = [
     {
@@ -43,6 +45,11 @@ const Information = () => {
     },
     {
       name: 'REFLECTION ACCURED',
+      price: 0.0,
+      usd: 0,
+    },
+    {
+      name: 'Total Volume',
       price: 0.0,
       usd: 0,
     },
@@ -81,8 +88,8 @@ const Information = () => {
         <div className='information'>
           <h3 className='title'>Wallet Information</h3>
           <div className='wallet-info-wrapper'>
-            {walletInfo.map((info, index) => {
-              return <WalletInformation info={info} key={index} />
+            {tokenInfo.map((info, index) => {
+              return <TokenInformation info={info} key={index} />
             })}
           </div>
           <div className='token-data'>
@@ -90,12 +97,10 @@ const Information = () => {
             <TokenData />
           </div>
         </div>
-        <div className='information'>
-          <h3 className='title'>Token Information</h3>
-          <div className='token-info-wrapper'>
-            {tokenInfo.map((info, index) => {
-              return <TokenInformation info={info} key={index} />
-            })}
+        <div className='information right-side'>
+          <div className='coming-soon'>
+            <p>Coming soon</p>
+            <h3>LP Farming Pools</h3>
           </div>
           <div className='logo-design'>
             <div className='logo-wrapper'>
@@ -142,7 +147,7 @@ const Wrapper = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translateY(10px);
+        transform: translateY(35px);
         gap: 1rem;
 
         .logo-wrapper {
@@ -178,15 +183,35 @@ const Wrapper = styled.section`
         padding: 0.8rem;
         border-radius: 5px;
       }
-      .token-info-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        border: 0.4px solid #2d2d2d;
-        padding: 0.8rem;
-        border-radius: 5px;
+      .coming-soon {
+        flex: 1;
+        color: white;
+        background: url(${bgsvg}) no-repeat;
+        background-size: cover;
+        font-family: phage;
+        min-height: 150px;
+        max-width: 400px;
+        padding-left: 1rem;
+        margin-top: 1rem;
+
+        h3 {
+          font-family: phage;
+          font-size: 2rem;
+          text-align: center;
+          padding-top: 2rem;
+        }
+        p {
+          padding-left: 3rem;
+          color: #8f8f8f;
+          animation-name: blink;
+          animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+        }
       }
+    }
+
+    .right-side {
+      padding-top: 1.8rem;
     }
   }
   .supply-info {
@@ -212,6 +237,23 @@ const Wrapper = styled.section`
     }
     .supply-info {
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .info-container {
+      .information {
+        .logo-design {
+          transform: translateY(10px);
+        }
+      }
+      .right-side {
+        padding-top: 0;
+
+        .coming-soon {
+          min-width: 100%;
+        }
+      }
     }
   }
 `

@@ -20,12 +20,12 @@ const Supply = ({ info }) => {
 }
 
 const Wrapper = styled.article`
-  padding: 1rem;
+  padding: 20px;
   border: 0.4px solid #2d2d2d;
   border-radius: 5px;
   flex: 1;
   display: flex;
-  gap: 0.4rem;
+  gap: 0.5rem;
   align-items: flex-start;
   h3 {
     font-weight: 400;
@@ -35,6 +35,7 @@ const Wrapper = styled.article`
     text-transform: uppercase;
     font-family: Phage;
     font-size: 1rem;
+    padding-bottom: 0.5rem;
   }
   .price {
     display: flex;
@@ -43,6 +44,7 @@ const Wrapper = styled.article`
     .only-up {
       font-family: 'Orbitron', sans-serif;
       font-size: 0.8rem;
+      padding-bottom: 0.5rem;
     }
     .usd {
       color: #11aeef;
