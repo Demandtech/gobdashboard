@@ -120,7 +120,7 @@ const Information = () => {
 const Wrapper = styled.section`
   /* border: 0.4px solid #2d2d2d; */
   border-radius: 5px;
-  margin-top: 50px;
+  margin-top: 20px;
   color: #ffffff;
   padding: 1.5rem 2px 1.5rem 2px;
   /* background: url(${bgsvg}); */
