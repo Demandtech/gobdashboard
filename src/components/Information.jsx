@@ -203,8 +203,6 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr;
       .information {
         .title {
-          text-align: right;
-          padding-right: 1rem;
           padding-top: 0.5rem;
         }
         .wallet-info-wrapper {
